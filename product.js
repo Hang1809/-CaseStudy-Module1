@@ -158,6 +158,7 @@ function editProduct(productCode){
         document.querySelector(`#locationShop`).value = "";
         document.querySelector(`#addProductID`).style.visibility = 'visible';
         renderProduct();
+        // clearForm();
         
 
     }
@@ -177,6 +178,7 @@ function editProduct(productCode){
         // console.log(products);
         setLocalStorage(productData, products);
         renderProduct();
+        // clearForm();
     }
     
 (function () {

@@ -16,7 +16,7 @@
 }
 .white {color: #0984e3;}
 
-.delcolor, .editcolor, .savecolor, .closecolor {color: white;}
+.delcolor, .editcolor, .savecolor, .closecolor {color:#22a6b3;}
 
 body {background-color:#f1f2f6;}
 #addProductID {

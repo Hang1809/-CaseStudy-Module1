@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Product</title>
-
+    
     <style>
        
         .intro { 
@@ -54,6 +54,15 @@
           color: #666;
           margin: 15px 0;
         }
+
+        .BackHomepage {
+            max-width: 750px;
+            margin: 0px auto;
+            text-align: right;
+            background-color: #42c8d1; 
+            
+        }
+
         </style>
 
 </head>
@@ -64,9 +73,10 @@
     <main>
         <section class="container cd-table-container">
             <h2 class = "cd-title">Search Table Block Knitted</h2>
-            <input type="text" class="cd-search table-filter" data-table="order-table" placeholder="Item to filter.."/>
+            <input type="text" id="myInput" onkeyup="myFunction()" class="cd-search table-filter" 
+            data-table="order-table" placeholder="Item to filter.."/>
         
-        <table class="cd-table order-table table">
+        <table id="myTable" class="cd-table order-table table">
             <thead>
                 <tr>
                     <th>Product Code</th>
@@ -153,6 +163,14 @@
             </tbody>
         </table>
         </section>
+      
+            
+               
+        </div>
+        <div class="BackHomepage">
+            <a href="index.html" target="_blank">
+                <h4> Go To First Page</h4>
+         </div>
     </main>
     <script src="findProduct.js"></script>
 </body>
